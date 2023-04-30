@@ -1,5 +1,7 @@
 package com.example.Mail;
 
+import java.util.ArrayList;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -17,10 +19,10 @@ public class EmailSenderService {
 		message.setSubject(subject);
 		message.setTo(toEmail);
 		message.setText(body);
-		
+				
 		mailSender.send(message);
 		
-		System.out.println("*** Mail Send Successfully ***");
+		System.out.println("***# Mail Send Successfully #***");
 
 	}
 	
